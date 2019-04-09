@@ -4,31 +4,31 @@
 
 In this practicum you will start with the github classroom link, create your own assignment repository, clone it on to your computer, make modifications to the unity project, commit the changes, and push back the updated repository to github.
 
-> The Unity project is already setup to work in VR with dpad navigation with a Vive and VR simulator. 
+> The Unity project is already setup to work in VR with VRTK for a VR simulator and HTC Vive. 
 
 ## Potential Resources:
-> For this assginment, is higliy recommended looking into VRTK's documentation.
+> For this assginment it is higliy recommended looking into VRTK's documentation.
 
 You should also feel free to watch anything else you find helpful, post to slack if you find good videos/tutorials/websites.
 
 ## Learning Outcomes
-- In Practium02 you will practice the ability to navigate and pick objects in the envrionment.
+- In Practium 2 you will practice the ability to navigate and pick objects in the envrionment.
 
 ## Directions
-Your practicum must be implemented on the scene *Practicum2* your Assets/SAIC-VRClass/Scenes/Practicum2-yourname
-Make a copy of Practicum2 and rename it as: Practicum2-yourname
+Your practicum must be implemented on a new duplicated scene of *Practicum2* located in Assets/SAIC-VRClass/Scenes/Practicum2-yourname
+1. Make a copy of Practicum2 and rename it as: Practicum2-yourname
 
 The practicum2 is ready for VR, and has the necesary VRK and SteamVR libraries. In order to get credit for this practicum, you need to make the spehre grabbable and be ready to navigate in the space with at least a teleport system. 
 
 ### Instructions:
 1. Add teleportation to the scene
-[VRTK_Scripts] > PlayAreaScripts need to have a teleport script, you need to add
+[VRTK_Scripts] > PlayAreaScripts need to have a teleport script, you need to add a teleporting method
 	1.1. VRTK basic teleport or, VRTK Dash teleport
 
 2. Setup an [Interactable Object](https://vrtoolkit.readme.io/docs/vrtk_interactableobject) by making the GameObject called *GrabMe* in the scene an interactable object, so the uer can pick it up and throw it anywhere.
 There are a couple of ways to achieve this. (2.1 or 2.2)
-    2.1 Place the VRTK_InteractableObject script onto the GameObject that is to be interactable.
-    2.2 Alternatively, select the GameObject and use the *Window -> VRTK -> Setup Interactable Object* panel to set up quickly.
+    2.1 Add the VRTK_InteractableObject script as a conmponent of the GameObject (GrabMe) that is to be interactable.
+    2.2 Alternatively, select the GameObject GrabMe, and use the *Window -> VRTK -> Setup Interactable Object* panel to set up quickly.
     
 3. Adjust your controllers script aliases so they are configured to Grab and Touch objects  
 *[VRTK_Scripts] >  LeftControllerScriptAlias & RightControllerScriptAlias*
